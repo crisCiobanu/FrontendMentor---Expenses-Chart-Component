@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'expenses-char-app';
+
+  bal = 921.48;
 }
