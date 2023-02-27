@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExpenseChartComponent } from './expense-chart/expense-chart.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ExpenseChartComponent
+    ExpenseChartComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

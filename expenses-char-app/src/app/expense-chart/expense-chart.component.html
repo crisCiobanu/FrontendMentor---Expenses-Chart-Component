@@ -1,18 +1,44 @@
-<p>expense-chart works!</p>
-
-<header class="main-header">
+<header class="main-header container-general">
   <div>
     <p>My balance</p>
     <h2>{{balance | currency: "USD"}}</h2>
   </div>
-  <img src="../../images/logo.svg" alt="The logo of the company">
+  <img src="./assets/logo.svg" alt="The logo of the company">
 </header>
 
-<main>
+<main class="container-general">
   <header>
-
+    <h2>Spending - Last 7 days</h2>
   </header>
-  <section>
 
+  <section>
+    <div class="spendings">
+      mon
+      tue
+      wed
+      thu
+      fri
+      sat
+      sun
+    </div>
   </section>
+
+  <hr>
+
+  <footer>
+    <div>
+      <div>
+        Total this month
+      </div>
+      <div class="dark-color">
+        <h1>$478.33</h1>
+      </div>
+    </div>
+    <div>
+      <div class="dark-color">
+        <h4>+2.4%</h4>
+      </div>
+      <div>from last month</div>
+    </div>
+  </footer>
 </main>

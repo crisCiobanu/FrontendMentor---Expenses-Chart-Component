@@ -10,3 +10,56 @@
   font-family: var(--font);
   font-size: 18px;
 }
+
+.main-header {
+  background-color: var(--color-soft-red);
+  color: var(--color-pale-orange);
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+main{
+  background-color: var(--color-pale-orange);
+  color: var(--color-dark-brown);
+
+  & > * {
+    margin: 1rem;
+  }
+
+  & footer {
+    color: var(--color-medium-brown);
+    display: flex;
+    justify-content: space-between;
+
+    div:last-child{
+      align-self: end;
+    }
+  }
+
+  & hr{
+    border:1px solid var(--color-cream);
+  }
+}
+
+//Utilities
+
+.container-general{
+  width: 30rem;
+
+  padding: 1.5rem;
+
+  border-radius: 1rem;
+
+  margin: 1rem;
+}
+
+.dark-color{
+  color: var(--color-dark-brown);
+}
+
+
+
+
+
