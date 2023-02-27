@@ -1,1 +1,9 @@
-<p>chart works!</p>
+<button *ngFor="let exp of expenses" class="tab">
+  <div class="amount">
+    {{exp.amount | currency: "USD"}}
+  </div>
+  <div class="bar" [style.height.rem]="(exp.amount / max * 8)"></div>
+  <div class="day">
+    {{exp.day}}
+  </div>
+</button>

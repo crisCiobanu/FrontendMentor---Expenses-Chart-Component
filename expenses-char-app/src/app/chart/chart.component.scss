@@ -1,0 +1,64 @@
+:host{
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.amount{
+  background-color: var(--color-dark-brown);
+  color: var(--color-pale-orange);
+
+  visibility: hidden;
+
+  padding: 0.3rem;
+
+  border-radius: 0.2rem;
+
+  transition: all 0.3s ease-in;
+}
+
+.day{
+  color: var(--color-medium-brown);
+}
+
+.tab{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 2.7rem;
+
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in;
+
+  & > * {
+    margin: 0.2rem 0;
+  }
+
+  &:hover, &:focus {
+    .bar{
+      background-color: var(--color-cyan);
+    }
+    .amount{
+      visibility: visible;
+    }
+  }
+}
+
+.bar{
+  background-color: var(--color-soft-red);
+
+  width: 2.7rem;
+  height: 8rem;
+
+  border: none;
+  border-radius: 0.2rem;
+
+  transition: all 0.3s ease-in;
+
+}
+

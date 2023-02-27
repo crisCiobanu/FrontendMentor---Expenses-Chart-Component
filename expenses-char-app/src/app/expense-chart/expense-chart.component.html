@@ -12,15 +12,7 @@
   </header>
 
   <section>
-    <div class="spendings">
-      mon
-      tue
-      wed
-      thu
-      fri
-      sat
-      sun
-    </div>
+    <app-chart [expenses]="data$ | async"></app-chart>
   </section>
 
   <hr>
@@ -31,14 +23,20 @@
         Total this month
       </div>
       <div class="dark-color">
-        <h1>$478.33</h1>
+        <h1 class="total-amount">$478.33</h1>
       </div>
     </div>
     <div>
-      <div class="dark-color">
+      <div class="dark-color text-to-end">
         <h4>+2.4%</h4>
       </div>
       <div>from last month</div>
     </div>
   </footer>
 </main>
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="cristianciobanu.tech">Cristian Ciobanu</a>.
+</div>

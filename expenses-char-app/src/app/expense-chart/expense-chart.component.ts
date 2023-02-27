@@ -1,4 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Inject, Input, OnInit} from '@angular/core';
+import {ExpenseService} from "../expense.service";
 
 @Component({
   selector: 'app-expense-chart[balance]',
@@ -9,7 +10,9 @@ export class ExpenseChartComponent implements OnInit {
 
   @Input() balance! : number;
 
-  constructor() { }
+  data$ = this.expenseService.getExpenses();
+
+  constructor(private readonly expenseService: ExpenseService) { }
 
   ngOnInit(): void {
   }
